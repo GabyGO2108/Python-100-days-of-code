@@ -1,0 +1,19 @@
+#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
+
+#Write your code below this line 👇
+print(input("Greetings human! Welcome to the tip calculator!"))
+bill = float(input("What is your bill?"))
+number_of_people = int(input("How many people want to split the bill?"))
+tip = int(input("How much tip would you like to give? 10, 12 or 15?"))
+
+total_bill = bill/number_of_people
+final_amount = round(total_bill,2)
+tip_as_percent = tip/100
+total_tip = tip_as_percent * total_bill
+round_total_tip = round(total_tip, 2)
+round_payment = round(total_bill, 2)
+total_payment = round_payment + total_tip
+round_total_payment = round(total_payment,2)
+
+
+print(f"The total with tip is {round_total_payment}, meaning each must pay ${final_amount}, plus a tip of {round_total_tip}")
